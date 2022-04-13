@@ -11,13 +11,13 @@ class Mode(Enum):
         return self.value
 
 parser = ArgumentParser()
-parser.add_argument("-folder", "--folder", dest="folder", type="string",
+parser.add_argument("-folder", "--folder", dest="folder",
                     help="find single files in this folder")
-parser.add_argument("-compare", "--compare", dest="compare", type="string",
+parser.add_argument("-compare", "--compare", dest="compare",
                     help="compare to this folder")
-parser.add_argument("-dst", "--dst", dest="dst", type="string",
+parser.add_argument("-dst", "--dst", dest="dst",
                     help="destination folder for single files")
-parser.add_argument('-mode', type=Mode, choices=list(Mode), default=Mode.duplicates,
+parser.add_argument('-mode', '--mode', type=Mode, choices=list(Mode), default=Mode.duplicates,
                     help="duplicates or missing")
 parser.add_argument("-recursive", "--recursive", dest="recursive",
                     action='store_true', help="include subfolders")
