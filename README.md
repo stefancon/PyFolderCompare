@@ -11,7 +11,7 @@ python3 .\folder_compare.py --folder "a" --compare "b" --dst "C:\Users\Example\D
 - ``-compare``: Folder containing comparison files to compare to.
 - ``-dst``: Destination path to copy search hit files (optional).
 - ``-dismiss-subfolders``: When choosing a destionation path copy all search hits to parent folder (also from search hits inside subfolders).
-- ``-no-dismiss-subfolders``: When choosing a destionation path copy all search hits and keep folder structure (from ``-folder``).
+- ``-no-dismiss-subfolders``: When choosing a destionation path copy all search hits and keep folder structure (from ``-folder``) (default).
 - ``-mode``: ``duplicates`` (default) or ``missing``.
 - ``-recursive``: Also traverse subfolders.
-- ``-no-recursive``: Ignore subfolders.
+- ``-no-recursive``: Ignore subfolders (default).
