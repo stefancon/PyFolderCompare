@@ -4,7 +4,7 @@ Quick and dirty folder comparison tool for finding either duplicate or missing f
 ## Example:
 Find all files that exist in ``a`` and ``b``. Therefore traverse subfolders in ``a`` and ``b``. Copy found duplicates to ``dst`` (without recreating subfolders from ``a`` and ``b``).
 ```
-python3 .\folder_compare.py --folder "a" --compare "b" --dst "C:\Users\Example\Desktop\c" --recursive --dismiss_subfolders -mode duplicates
+python3 .\folder_compare.py --folder "a" --compare "b" --dst "C:\Users\Example\Desktop\c" --recursive --dismiss_subfolders --mode duplicates
 ```
 
 ## Parameters:
