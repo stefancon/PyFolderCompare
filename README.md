@@ -8,8 +8,8 @@ python3 .\folder_compare.py --folder "a" --compare "b" --dst "C:\Users\Example\D
 
 ## Parameters:
 - ``-folder``: Folder containing files to compare.
-- ``-compare``: Folder containing comparison files.
-- ``-dst``: Destionation path to copy search hit files (optional).
+- ``-compare``: Folder containing comparison files to compare to.
+- ``-dst``: Destination path to copy search hit files (optional).
 - ``-dismiss-subfolders``: When choosing a destionation path copy all search hits to parent folder (also from search hits inside subfolders).
 - ``-no-dismiss-subfolders``: When choosing a destionation path copy all search hits and keep folder structure (from ``-folder``).
 - ``-mode``: ``duplicates`` (default) or ``missing``.
