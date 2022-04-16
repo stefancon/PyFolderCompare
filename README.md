@@ -1,7 +1,7 @@
 # PyFolderCompare
 Quick and dirty folder comparison tool for finding either duplicate or missing files (and optionally copy search hits to another location). Currently comparison only based on filenames.
 
-## Parameters:
+## Arguments:
 - ``-folder``: Folder containing files to compare.
 - ``-compare``: Folder containing files to compare to.
 - ``-mode``: ``duplicates`` (default) or ``missing``.
