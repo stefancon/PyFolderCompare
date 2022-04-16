@@ -1,18 +1,16 @@
 # PyFolderCompare
-Quick and dirty folder comparison tool for finding either duplicate or missing files (and optionally copy search hits to another destination). Currently comparison only based on filenames.
+Quick and dirty folder comparison tool for finding either duplicate or missing files (and optionally copy search hits to another location). Currently comparison only based on filenames.
 
 ## Parameters:
 - ``-folder``: Folder containing files to compare.
-- ``-compare``: Folder containing comparison files to compare to.
-- ``-dst``: Destination path to copy search hit files (optional).
-- ``-dismiss-subfolders``: When choosing a destionation path copy all search hits to parent folder (also from search hits inside subfolders).
-- ``-no-dismiss-subfolders``: When choosing a destionation path copy all search hits and keep folder structure (from ``-folder``) (default).
+- ``-compare``: Folder containing files to compare to.
 - ``-mode``: ``duplicates`` (default) or ``missing``.
-- ``-recursive``: Also traverse subfolders.
-- ``-no-recursive``: Ignore subfolders (default).
+- ``-dst``: Destination path to copy search hits i.e. duplicate or missing files (optional).
+- ``-dismiss-subfolders``/``-no-dismiss-subfolders`` (default): When selecting a destination directory for copying the search hits, copy all files directly here. Otherwise, the folder structure of the search hits will be recreated when copying.
+- ``-recursive`` (default)/``-no-recursive``: Also traverse subfolders when searching for duplicate or missing files .
 
 ## Example:
 Find all files that exist in ``a`` and ``b``. Therefore traverse subfolders in ``a`` and ``b``. Copy found duplicates to ``dst`` (without recreating subfolders from ``a`` and ``b``).
 ```
-python3 .\folder_compare.py -folder "a" -compare "b" -dst "C:\Users\Example\Desktop\c" -recursive -dismiss_subfolders -mode duplicates
+python3 .\folder_compare.py -folder "a" -compare "b" -mode duplicates -dst "C:\Users\Example\Desktop\c" -dismiss_subfolders -recursive
 ```
